@@ -1,0 +1,56 @@
+<div
+  class="
+    wrapper
+    d-flex
+    flex-column
+    gap-5
+    container-fluid
+    bg-dark-subtle
+    p-4
+    border border-dark-subtle
+  "
+>
+  <h1 class="text-center display-4">{{ title }}</h1>
+  <form action="" class="d-flex flex-column gap-4 align-items-center">
+    <label class="form-label">
+      <span class="lead">Numero 1:</span>
+      <input
+        type="number"
+        [(ngModel)]="numero1"
+        name="Numero1"
+        class="form-control"
+      />
+    </label>
+    <label class="form-label">
+      <span class="lead">Numero 2:</span>
+      <input
+        type="number"
+        [(ngModel)]="numero2"
+        name="Numero2"
+        class="form-control"
+      />
+    </label>
+    <input
+      type="submit"
+      value="Sumar"
+      (click)="sumar()"
+      class="btn btn-dark w-50"
+    />
+    <input
+      type="submit"
+      value="Restar"
+      (click)="restar()"
+      class="btn btn-dark w-50"
+    />
+  </form>
+  <span
+    class="
+      text-center
+      border-top border-bottom border-success
+      text-success
+      lead
+    "
+  >
+    {{ resultado }}</span
+  >
+</div>
